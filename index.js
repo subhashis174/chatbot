@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
 app.get('/',function(req,res){
-    res.send("hi there from ML bot")
+    //res.send("hi there from ML bot")
+    res.redirect('/test/')
 })
 
 app.get('/webhook/',function(req,res){
